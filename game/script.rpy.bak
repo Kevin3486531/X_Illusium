@@ -25,7 +25,6 @@ define labIntro = False
 
 label start:
 
-    show shipEx
     "It's currently year 3249."
     "Alien life has been discovered and although they have not attacked us yet, their technology far surpasses ours in terms of power."
     "They have introduced their planet as Ambrose."
@@ -33,20 +32,19 @@ label start:
     "According to the information, this planet holds a large energy source from a past successful civilization."
     "If the ambrosians were to obtain this energy source, they will be a massive threat to Earth."
     "I am Eric, a professional in exploration and my mission, alongside a team of experts, is to secure this energy source from Planet X."
-    hide shipEx
 
-    show roomA
+    show shipIn
     play music "audio/music/xilussim3.mp3"
     #play sound "audio/sounds/treasure founds.mp3"
 
-    show robot
+    show robot with easeinright
     robot "Greetings, you may call me Britz, I am the robot in charge of your lives on the spaceship.
         If you have any questions, you may contact me, I am everywhere, even in the lavatory."
     hide robot with moveoutleft
 
     main "For now, I think I should go meet the team and see the people I'm working with."
 
-    call shipIntro from _call_shipIntro
+    call shipIntro
 
     ""
 

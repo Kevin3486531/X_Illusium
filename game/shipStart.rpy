@@ -27,6 +27,7 @@ label shipIntro:
 
 label hall:
 
+    hide roomA with fade
     show shipIn with fade
 
     show lt
@@ -60,15 +61,16 @@ label hall:
     main "Hey, that was definitely your fault."
     "That was Sue, another exploration expert like me."
     "We had a mission in the past but ran into some trouble because of her not assessing the area
-    for traps before moving."
+    for traps before making a move."
 
-    "That seemed to be everyone here."
+    "Anyway, that seemed to be everyone here."
 
     show shipIn with fade
     jump shipIntro
 
 label cabin:
 
+    hide roomA with fade
     show shipIn with fade
 
     show cpt
@@ -87,41 +89,45 @@ label cabin:
     "I'd like to hope that there will be no sacrifices."
 
     stranger "WUWUWUWUWUWUWUWUWUWUWU"
+    "I turn towards the source of the sound and look down."
     show monkey
     "...What?"
     hide monkey with moveoutleft
     "Am I hallucinating? Why is there a monkey aboard this ship?"
 
-    "That seemed to be everyone here."
+    "I think I should head back, seemed like that was everyone here."
 
     show shipIn with fade
     jump shipIntro
 
 label lab:
 
+    hide roomA with fade
     show shipIn with fade
 
     show sci:
-        xalign 0.3
-    show ast:
         xalign 0.7
+    show ast:
+        xalign 0.3
     sci "Yes, the dynamic theory of this spacecraft was researched by me.
         In the universe, our human civilization is simply like a small dust particle."
     sci "To have discovered an alien civilization in my lifetime, oh I just can't wait to
         see their technology! Aren't you excited, Cecelia?"
     ast "Yes, yes, I get it. You really want to see those aliens up close. It's too bad we are basically at war."
 
-    "That's the scientist"
+    "That's our researcher, Dr. Newinstein and who I assume is his assistant."
 
-    hide sci with moveoutleft
+    hide sci with moveoutright
     ast "Hm, who are you?"
     main "Hello, my name is Eric-"
     ast "So you're not a researcher?"
     ast "Then why are you here? We can't risk you breaking any important equipment."
     ast "If you have no business then you should just leave."
-
-    "That was quite blunt but it seemed like everyone here anyway."
     hide ast
+
+    "Stunned by the sudden aggressiveness, I turned away."
+    "It seemed like it was just those two here anyway."
+
 
     show shipIn with fade
     jump shipIntro
